@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .main-nav {
+            background-color: #a30808; /* Kırmızı arka plan rengi */
+            margin-bottom: 30px;
+        }
+
+        .main-nav .nav .nav-item {
+            font-weight: 600; /* Yazı Stilleri */
+            text-transform: uppercase;
+            font-family: 'open sans', arial, sans-serif;
+            z-index: 100;
+        }
+
+        .main-nav .nav .nav-item a {
+            color: #ffffff; /* Beyaz yazı rengi */
+        }
+
+        .main-nav .nav .nav-item a:hover {
+            color: #a30808; /* Hover durumunda değişen renk */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* Beyaz logo rengi */
+        }
+
+        .navbar-brand img {
+            max-height: 35px; /* İstediğiniz yüksekliğe göre ayarlayabilirsiniz */
+        }
+
+        .navbar-brand:hover {
+            color: #a30808; /* Hover durumunda değişen logo rengi */
+        }
+
+        .search-bar {
+            padding: 8px; /* Arama çubuğu etrafındaki boşluk */
+            margin-left: 10px; /* Sağa kaydırma */
+        }
+
+        .search-btn {
+            background-color: #ffffff; /* Beyaz buton arka plan rengi */
+            color: #ff0000; /* Kırmızı buton yazı rengi */
+        }
+        .center-logo {
+            text-align: center;
+            margin-top: 50px; /* İhtiyaca göre ayarlanabilir */
+        }
+
+        .center-logo img {
+            max-width: 30%; /* Logonun genişliği, ekran boyutuna göre otomatik ayarlanacak */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav" role="navigation"> <!-- NavBar -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="besiktas.png" alt="Beşiktaş Logo"> <!-- Logo Kısmı -->
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a href="#">Home</a> <!-- Buton -->
+                </li>
+                <li class="nav-item">
+                    <a href="#">Products</a> <!-- Buton -->
+                </li>
+                <li class="nav-item">
+                    <a href="#">Services</a> <!-- Buton -->
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right search-bar"> <!-- Serarch Bar -->
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn search-btn">Search</button> <!-- Search Bar Butonu -->
+            </form>
+        </div>
+    </nav>
+
+    <div class="center-logo">
+        <img src="besiktas.png" alt="Beşiktaş Logo">
+    </div>
+
+</body>
+</html>
